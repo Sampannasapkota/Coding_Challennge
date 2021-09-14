@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main()
+{
+    int order;
+    printf("Welcome to our official site\n-Press 1 to continue \n-press 2 to exit our site\n ");
+    scanf("%d", &order);
+
+    if (order == 1)
+    {
+        printf("Thank you for loving our site\n-press 3 to continue :");
+        scanf("%d", &order);
+
+        int choose;
+        printf("What do you want to buy from here? \n 1.Pencil \n 2.Eraser \n 3.Sharpner \n :");
+        scanf("%d", &choose);
+
+        if (choose == 1)
+        {
+            printf("You've succesfully purchased pencil\nThank you for choosing us!!");
+        }
+
+        else if (choose == 2)
+        {
+            printf("You've succesfully purchased Eraser\nThank you for choosing us!!");
+        }
+
+        else if (choose == 3)
+        {
+            printf("You've succesfully purchased Sharpner\nThank you for choosing us!!");
+        }
+        else
+        {
+            printf("Your order is invalid!!\nPlease choose the number between 1 to 3");
+        }
+    }
+
+    else
+    {
+        printf("Thank you for visiting our site\n--See you later--");
+    }
+}
